@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self';"> -->
+    <link rel="shortcut icon" href="Assets/Images/Home/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./Assets/css/home.css">
+    <link rel="stylesheet" href="./Assets/css/hero-silder.css">
+    <link rel="stylesheet" href="./Assets/css/mediaquries.css">
+    <link rel="stylesheet" href="./Assets/css/portfolio.css">
+    <link rel="stylesheet" href="./Assets/css/services.css">
+    <link rel="stylesheet" href="./Assets/css/packages.css">
+    <link rel="stylesheet" href="./Assets/css/contact.css">
+    <link rel="stylesheet" href="./Assets/css/about.css">
+    <!-- Owl Slider- Client Section -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>WB Tech</title>
+</head>
+<body>
+
+    <header>
+    <div class="contact-header-bg">
+            <!-- Nav Start -->
+            <div class="nav-main wb-tech-container">
+
+                <div class="nav-inner">
+                    <!-- Nav logo -->
+                     <a href="index.html">
+                    <div class="nav-log">
+                        <img src="Assets/Images/Home/Logo.png" alt="">
+                    </div>
+                    </a>
+                    <!-- Nav links -->
+                    <ul class="nav-links">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="packages.html">PACKAGES</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="https://app.autobooks.co/pay/wb-tech/?share"><button>PAY NOW</button></a></li>
+                    </ul>
+                    <!-- Nav-Hamburger -->
+                    <div class="hamburger-menu" onclick="navShow()">
+                        <div class="bar-top"></div>
+                        <div class="bar-middle"></div>
+                        <div class="bar-bottom"></div>
+                    </div>
+
+                </div>
+
+                <!-- Mobile Nav Menu -->
+                <div class="mobile-nav-main">
+                    <ul class="mobile-nav-links">
+                        <li class="mobile-inner-link"><a href="index.html">HOME</a></li>
+                        <li class="mobile-inner-link"><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li class="mobile-inner-link"><a href="services.html">SERVICES</a></li>
+                        <li class="mobile-inner-link"><a href="packages.html">PACKAGES</a></li>
+                        <li class="mobile-inner-link"><a href="about.html">ABOUT</a></li>
+                        <li class="mobile-inner-link"><a href="contact.html">CONTACT</a></li>
+                        <li class="mobile-inner-link"><a href="https://app.autobooks.co/pay/wb-tech/?share">PAY NOW</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Nav End -->
+
+
+ 
+            <!-- Portfolio Hero Section Start -->
+
+            <div class="portfolio-hero">
+
+                <div class="porfolio-bg about-bg">
+                    <div class="contact-heading">
+                        <div class="contact-heading-img">
+                            <img src="./Assets/Images/About/Ellipse 35.png" alt="">
+                        </div>
+                        <h2><span class="company-heading-white" >CO</span>NTACT</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Portfolio Hero Section End --> 
+    </div>
+    </header>
+
+<div class="contact-form-main wb-tech-container">
+
+    <div class="contact-form-left">
+
+        <!-- Phone -->
+        <div class="about-left-inner">
+
+            <div class="about-left-img">
+                <img src="./Assets/Images/Contact/phone.png" alt="">
+            </div>
+
+            <div class="about-left-text">
+                <h2>PHONE NUMBER</h2>
+                <p>+1 (954) 824-4608</p>
+            </div>
+
+        </div>
+        <!-- Email -->
+        <div class="about-left-inner">
+
+            <div class="about-left-img">
+                <img src="./Assets/Images/Contact/email.png" alt="">
+            </div>
+
+            <div class="about-left-text">
+                <h2>EMAIL ADDRESS</h2>
+                <p>INFO@WBSOFTTECH.COM</p>
+            </div>
+
+        </div>
+
+        <!-- Location -->
+        <div class="about-left-inner">
+
+            <div class="about-left-img">
+                <img src="./Assets/Images/Contact/location.png" alt="">
+            </div>
+
+            <div class="about-left-text">
+                <h2>LOCATION</h2>
+                <p>193 W3 ST DEER PARK,
+                    NY 11729</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="contact-form-right" id="wb-contact-form">
+        <div class="contact-form-inner">
+            <h2>send us a message</h2>
+
+          
+            <form id="contactForm" action="submit_form.php" method="post" class="contact-form-submission">
+                <input type="text" name="uname" id="name" class="contact-input" placeholder="Your Name" required><br>
+                <input type="email" name="email" id="email" class="contact-input" placeholder="Your Email" required><br>
+                <input type="text" name="phone" id="phone" class="contact-input" placeholder="Your Phone Number" required><br>
+                <textarea name="message" id="message" rows="5" class="contact-textarea" placeholder="Your Message" required></textarea><br>
+                <input type="checkbox" name="consent" id="consent" class="contact-checkbox"><span>By clicking the "Submit" button below, you consent to receiving text messages from WB Soft Tech and acknowledge that you agree to our Privacy Policy. Standard message and data rates may apply.</span> <br>
+                <input type="submit" value="Submit →" class="contact-submit">
+            </form>
+            
+        
+        </div>
+
+    </div>
+</div>
+
+<div class="contact-location" id="contact-location">
+    <h2>find us on
+        google maps</h2>
+</div>
+
+<div class="contact-location-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.4360309725234!2d-73.3341834!3d40.752433599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e82c4f750f597b%3A0x448c0381ec061c5e!2s193%20W%209th%20St%2C%20Deer%20Park%2C%20NY%2011729%2C%20USA!5e0!3m2!1sen!2s!4v1719507404722!5m2!1sen!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+
+
+
+
+
+
+<footer>
+
+    <div class="footer-inner">
+            <div class="footer-logo-section">
+
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="Assets/Images/Home/footer Logo.svg" alt="">
+                </a>
+            </div>
+
+            <p>WB Tech are a software company that delivers cutting edge solutions for global organizations and technology startups. Since 2015 we have been helping companies.</p>
+
+            <div class="footer-social-icon">
+                <a href="https://www.facebook.com/wbsofttech/"><img src="Assets/Images/Home/FB Icon.svg" alt=""></a>
+                <a href="https://www.instagram.com/wbsofttech"><img src="Assets/Images/Home/Insta Icon.svg" alt=""></a>
+                <a href="https://www.linkedin.com/company/wb-tech-software-company"><img src="Assets/Images/Home/Linkedin Icon.svg" alt=""></a>
+            </div>
+
+            </div>
+
+            <div class="footer-section">
+                <a href="index.html">HOME</a>
+
+                <div class="footer-sublinks">
+                    <a href="index.html#home-about-section">ABOUT</a>
+                    <a href="index.html#home-workinprocess-section">WORKING PROCESS</a>
+                    <a href="index.html#home-testimonial-section">TESTIMONIALS</a>
+                    <a href="index.html#home-usa-service-section">SERVICE IN USA</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <a href="services.html">SERVICES</a>
+
+                <div class="footer-sublinks">
+                    <a href="services-webdevelopment.html">WEB DEVELOPEMENT</a>
+                    <a href="services-graphicdesign.html">GRAPHIC DESIGNING</a>
+                    <a href="services-animation.html">ANIMATION</a>
+                    <a href="services-socialmedia.html">SOCIAL MEDIA MARKETING</a>
+                    <a href="services-seo.html">SEO</a>
+                    <a href="packages.html">PACKAGES</a>
+                </div>
+            </div>
+
+
+            <div class="footer-section">
+                <a href="portfolio.html">PORTFOLIO</a>
+
+                <div class="footer-sublinks">
+                    <a href="portfolio-websites.html">WEBSITES</a>
+                    <!-- <a href="portfolio-application.html">APPLICATIONS</a> -->
+                    <a href="portfolio-graphicdesign.html">GRAPHIC DESIGNS</a>
+                    <a href="portfolio-socialmedia.html">SOCIAL MEDIA MARKETING</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <a href="contact.html">CONTACT</a>
+
+                <div class="footer-sublinks">
+                    <a href="https://wa.me/+19548244608"><img src="Assets/Images/Home/phone icon.svg" alt="">+1 (646)-931-0759</a>
+                    <a href="mailto:info@wbsofttech.com"><img src="Assets/Images/Home/mail icon.svg" alt=""> INFO@WBSOFTECH.COM</a>
+                    <a href="contact.html#contact-location"><img src="Assets/Images/Home/location icon.svg" alt=""> 193, W3 ST DEER PARK, NY 11729</a>
+                </div>
+            </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2024 wbsofttech. All Rights Reserved</p>
+
+        <div class="footer-privacy-and-policy">
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="termsandconditions.html">TERMS AND CONDITIONS</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="./Assets/js/wb.js"></script>
+<script src="./Assets/js/owlSlider.js"></script>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        let isValid = true;
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+        const consent = document.getElementById('consent').checked;
+
+        // Validate name
+        if (name.trim() === '' || !/^[A-Za-z ]+$/.test(name)) {
+            alert('Please enter a valid name (letters and spaces only).');
+            isValid = false;
+        }
+
+        // Validate email
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert('Please enter a valid email address.');
+            isValid = false;
+        }
+
+        // Validate phone
+        if (!/^\+?\d{10,15}$/.test(phone)) {
+            alert('Please enter a valid phone number (10 to 15 digits).');
+            isValid = false;
+        }
+
+        // Validate message
+        if (message.trim() === '') {
+            alert('Message cannot be empty.');
+            isValid = false;
+        }
+
+        // Validate consent
+        if (!consent) {
+            alert('You must consent to receiving messages.');
+            isValid = false;
+        }
+
+        // Prevent form submission if validation fails
+        if (!isValid) {
+            event.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+:root{
+    --manrope-font-family: "Manrope";
+    --heading-color: rgba(71, 117, 255, 1);
+    --para-color:  rgba(121, 121, 121, 1);
+    --main-font-size-1920px: 45px;
+    --para-font-size-1920px: 16px;
+    --main-font-size-1440px: 40px;
+    --para-font-size-1440px: 16px;
+    --main-font-size-1200px: 36px;
+    --para-font-size-1200px: 16px;
+    --main-font-size-1024px: 32px;
+    --para-font-size-1024px: 14px;
+    --main-font-size-768px: 30px;
+    --para-font-size-768px: 14px;
+    --main-font-size-425px: 26px;
+    --para-font-size-425px: 12px;
+}
+
+.privacy-section h3{
+    text-align: center;
+    font-size: var(--main-font-size-1920px);
+    font-weight: 400;
+    color: var(--heading-color);
+}
+
+.privacy-section p{
+    color: var(--para-color);
+    font-size: var(--para-font-size-1920px);
+    padding-block: 10px;
+}
+
+.privacy-section h4{
+    color: var(--heading-color);
+    padding-block: 15px;
+    font-size: 20px;
+}
+.privacy-section h5{
+    color: var(--heading-color);
+    padding-block: 12px;
+    font-size: 18px;
+}
+.privacy-section{
+    padding-inline: 20px;
+    max-width: 80%;
+    padding-block: 30px;
+}
+
+.privacy-section ul{
+    list-style-position: inside;
+    color: var(--para-color);
+}
+
+@media screen and (max-width: 1440px) {
+    .privacy-section p{
+        font-size: var(--para-font-size-1440px);
+    }
+    .privacy-section ul{
+        font-size: var(--para-font-size-1440px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .privacy-section p{
+        font-size: var(--para-font-size-1024px);
+    }
+    .privacy-section ul{
+        font-size: var(--para-font-size-1024px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .privacy-section p{
+        font-size: var(--para-font-size-768px);
+    }
+    .privacy-section ul{
+        font-size: var(--para-font-size-768px);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .privacy-section p{
+        font-size: var(--para-font-size-425px);
+    }
+    .privacy-section ul{
+        font-size: var(--para-font-size-425px);
+    }
+}

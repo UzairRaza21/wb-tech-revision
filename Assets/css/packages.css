@@ -1,0 +1,295 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root{
+    --manrope-font-family: "Manrope";
+    --heading-color: rgba(71, 117, 255, 1);
+    --para-color:  rgba(121, 121, 121, 1);
+    --main-font-size-1920px: 45px;
+    --para-font-size-1920px: 16px;
+    --main-font-size-1440px: 40px;
+    --para-font-size-1440px: 16px;
+    --main-font-size-1200px: 36px;
+    --para-font-size-1200px: 16px;
+    --main-font-size-1024px: 32px;
+    --para-font-size-1024px: 14px;
+    --main-font-size-768px: 30px;
+    --para-font-size-768px: 14px;
+    --main-font-size-425px: 26px;
+    --para-font-size-425px: 12px;
+}
+
+
+.packages-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.packages-heading-img img{
+    width: 80% !important;
+}
+.packages-heading h2{
+    transform: translateX(-160px);
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--heading-color);
+}
+
+.packages-bg{
+    background-image: url(../Images/Packages/Packages\ Banner\ 1.png);
+}
+
+.packages-carts{
+    margin-top: -225px;
+}
+/* WEB Developement Inner Page */
+.portfolio-linkpage-heading h3{
+    color: var(--heading-color);
+    font-size: var(--main-font-size-1920px);
+    font-weight: 500;
+}
+.portfolio-linkpage-heading h4{
+    color: var(--heading-color);
+    font-size: var(--main-font-size-768px);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.portfolio-linkpage-heading p{
+    color: var(--para-color);
+    margin-top: 10px;
+}
+
+.packages-linkpage-section-2-main{
+    background: linear-gradient(180deg, rgba(71, 117, 255, 1) 50%, rgba(220, 229, 255, 1) 50%);
+    width: 100%;
+    height: 900px;
+}
+
+.packages-linkpage-section-2-main h2{
+   text-align: center;
+   padding-top: 100px;
+   font-size: var(--main-font-size-1920px);
+   font-weight: 400;
+   color: white;
+}
+
+
+.packages-linkpage-section-2-carts{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -650px;
+}
+ 
+.packages-linkpage-carts{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 500px;
+	position: relative;
+	transform-style: preserve-3d;
+	perspective: 900px;
+}
+
+.packages-linkpage-carts-header{
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(269.98deg, #3092C9 0.02%, #9CD0ED 113.79%);
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+.packages-linkpage-carts-heading{
+    width: 50%;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+
+.packages-linkpage-carts-heading h3{
+    font-size: 20px;
+    font-weight: 400;
+    transform: translateZ(60px);
+    padding-top: 20px;
+}
+
+.packages-linkpage-carts-data{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 50px;
+    text-align: center;
+    margin-top: 50px;
+    gap: 20px;
+    transform-style: preserve-3d;
+}
+.packages-linkpage-carts-data h3{
+    font-size: 50px;
+    color: rgba(60, 153, 205, 1);
+    font-weight: 400;
+    font-family: Lexend Deca;
+    transform: translateZ(60px);
+}
+
+.packages-linkpage-carts-data p{
+    color: var(--para-color);
+    transform: translateZ(60px);
+    font-size: 14px;
+}
+
+
+.startup-package-font-color h3{
+    color: rgba(60, 153, 205, 1);
+}
+.sliver-package-bg-color{
+    background: linear-gradient(270.02deg, #0449B0 -20.23%, #00A8E9 99.98%);
+}
+.silver-package-font-color h3{
+    color: rgba(34, 111, 225, 1);
+}
+
+.professional-package-bg-color{
+    background: linear-gradient(270deg, #0D3BB4 -6.45%, #3462DD 103.16%);
+
+}
+
+.professional-package-font-color h3{
+    color: rgba(12, 75, 198, 1);
+
+}
+
+
+.packages-linkpage-card-front{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+	transition: 0.7s;
+    background-color: white;
+    border-radius: 20px;
+    transform: translateZ(50px);
+}
+
+.packages-linkpage-card-back{
+    position: absolute;
+	text-align: center;
+	width: 100%;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	transform: rotateY(-180deg);
+	background: white;
+	transition: transform 0.5s, height 0.7s, visibility 0.1s;
+    border-radius: 20px;
+    padding-inline: 50px;
+    height: 530px;
+}
+
+.packages-linkpage-carts:hover .packages-linkpage-card-back{
+    transform: rotateY(0deg) translateY(-12px);
+}
+
+.packages-linkpage-carts:hover .packages-linkpage-card-front{
+    transform: rotateY(180deg);
+}
+
+.packages-linkpage-card-back h3{
+    font-size: 30px;
+    transform: translateZ(50px);
+    padding-top: 30px;
+}
+
+.package-web-cart-3 ul li{
+    font-size: 12px;
+}
+.package-combo-cart-3 ul li {
+    font-size: 11px;
+}
+.packages-linkpage-card-back ul{
+    transform-style: preserve-3d;
+    padding: 10px 0px 70px 0px;
+}
+.packages-linkpage-card-back li{
+    text-align: left;
+    color: var(--para-color);
+    transform: translateZ(50px);
+}
+.packages-linkpage-carts-outer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+
+
+/* Package Button  */
+.package-buy-button{ 
+    width: 320px;
+    height: 50px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.professional-button{
+    background: rgba(12, 75, 198, 1);
+    transition: all 500ms;
+}
+.professional-button:hover{
+    background: rgb(77, 128, 230);
+}
+.sliver-button{
+    background: rgba(34, 111, 225, 1);
+    transition: all 500ms;
+}
+.sliver-button:hover{
+    background: rgb(117, 164, 234);
+    transition: all 500ms;
+}
+.starter-button{
+    background: rgba(60, 153, 205, 1);
+    transition: all 500ms;
+}
+.starter-button:hover{
+    background: rgb(122, 189, 227);
+
+}
+
+
+
+.packages-contact-main{
+    background-color: rgba(71, 117, 255, 1);
+    border-radius: 40px;
+    height: 500px;
+    margin-block: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.packages-contact-main p{
+    color: rgb(51, 51, 51);
+}
+.packages-contact-main a, i{
+    color: white;
+    font-size: 18px;
+}
+
+.packages-contact-heading h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: var(--main-font-size-1920px);
+    font-weight: 300;
+    text-align: center;
+    line-height: 30px;
+}
