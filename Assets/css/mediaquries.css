@@ -2074,6 +2074,10 @@ footer{
     }
     .mobile-hero-section-slider{
         display: block;
+        background-image: url(../Images/Home/hero-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
 
     }
     .nav-inner{
@@ -2476,7 +2480,7 @@ footer{
 
 /* Working Process */
 .working-process-heading{
-    padding: 0px 0px 0px 30px;
+    padding: 0px 0px 0px 60px;
 }
 .working-process-heading h1{
     transform: translateX(-18.5%);
@@ -2562,7 +2566,7 @@ footer{
         right: -8%;
     }
     .testimonial-slider-main {
-        height: 800px;
+        height: 450px;
     }
 
     /* USA Services */
@@ -3159,6 +3163,37 @@ footer{
      font-size: 14px !important;
 }
 
+.wb-mobile-hero-prev {
+    left: 25px;
+    top: 180px;
+}
+.wb-mobile-hero-next {
+    right: -365px;
+    top: -80px;
+}
+
+.footer-bottom {
+    flex-direction: column-reverse;
+}
+
+.usa-service-mobile-text{
+    font-size: 15px;
+}
+.usa-service-mobile-text h2 {
+    font-size: 28px;
+}
+.working-process-heading img{
+    width: 20%;
+}
+
+.testimonial-heading img {
+    width: 20% ;
+}
+
+.usa-service-heading img{
+    width: 25% ;
+}
+
 }
 
 @media screen and (max-width: 375px) {
@@ -3182,7 +3217,7 @@ footer{
 
 .hero-home-slide-3-text{
     flex-basis: 100%;
-    margin-inline: 80px;
+    margin-inline: 50px;
     }
 .hero-home-slide-3-text h1{
         font-size: 25px;
@@ -3199,7 +3234,7 @@ footer{
     flex-basis: 100%;
 }
 .about-company-heading h1{
-    font-size: var(--main-font-size-375px);
+    font-size: 24px;
 }
 .about-company-text p{
     font-size: var(--para-font-size-375px);
@@ -3488,7 +3523,43 @@ footer{
 
 /* 3D Slider End */
 
-
+.wb-mobile-hero-prev {
+    left: 25px;
+    top: 180px;
+}
+.wb-mobile-hero-next {
+    right: -326px;
+    top: -62px;
+}
+.hero-text h1 {
+    font-size: 22px;
+    line-height: 25px;
+    width: 75%;
+}
+.hero-home-slide-2-text h1 {
+    font-size: 22px;
+    line-height: 25px;
+    width: 70%;
+}
+.hero-bold-text {
+    font-size: 22px;
+    line-height: 25px;
+}
+.hero-home-slide-3-text h1 {
+    font-size: 22px;
+    line-height: 25px;
+    margin: 0% auto;
+    width: 100%;
+}
+.testimonial-slider-main {
+    height: 400px;
+}
+.usa-service-mobile-prev {
+    left: 3px;
+}
+.usa-service-mobile-next {
+    right: 0px;
+}
 }
 
 @media screen and (max-width: 320px) {
@@ -3543,7 +3614,7 @@ footer{
     flex-basis: 100%;
 }
 .about-company-heading h1{
-    font-size: var(--main-font-size-375px);
+    font-size: 23px;
 }
 .about-company-text p{
     font-size: var(--para-font-size-375px);
@@ -3575,7 +3646,7 @@ footer{
     height: 230px ;
 }
 .working-process-heading {
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 40px;
 }
 .working-process-slider .slide-img{
     width: 25%;
@@ -3879,4 +3950,57 @@ footer{
 }
 
 /* 3D Slider End */
+.wb-mobile-hero-next {
+    right: -280px;
+    top: -62px;
+}
+.wb-mobile-hero-prev {
+    left: 15px;
+    top: 180px;
+}
+.hero-home-slide-2-text h1 {
+    font-size: 22px;
+    line-height: 25px;
+    width: 85%;
+}
+.hero-home-slide-3-text h1 {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0% auto;
+    width: 100%;
+}
+.usa-service-mobile-slide-img img {
+    width: 80%;
+}
+.usa-service-mobile-text {
+    left: 50px;
+    font-size: 13px;
+    top: -58px;
+    margin-block: 94px;
+    width: 200px;
+}
+.usa-service-mobile-text h2 {
+    color: var(--heading-color);
+    font-size: 24px;
+}
+.usa-service-mobile-slide-img img {
+    width: 80%;
+    margin-left: 35px;
+}
+.usa-service-mobile-prev, .usa-service-mobile-next {
+    top: 55%;
+}
+.usa-service-mobile-slider {
+    height: 400px;
+}
+.testimonial-heading {
+    padding: 0% 0px 0% 40px;
+}
+.usa-service-heading {
+    padding: 0 0px 0 40px;
+}
+.about-company-heading{
+    padding: 0 0px 0 20px;
+}
+
 }

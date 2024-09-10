@@ -1071,7 +1071,7 @@ a{
     width: 100%;
     position: absolute;
     top: 50%;
-    transform: translatey(-50%);
+    transform: translateY(-50%);
     overflow: hidden;
 }
 
@@ -1081,6 +1081,7 @@ a{
     max-width: 1150px;
     padding: 40px 20px;
     margin: auto;
+    height: 350px;
 }
 
 .testim .arrow {
@@ -1233,12 +1234,12 @@ a{
 @keyframes testim-content-in {
     from {
         opacity: 0;
-        transform: translateY(100%);
+        transform: translateX(100%);
     }
     
     to {
         opacity: 1;
-        transform: translateY(0);        
+        transform: translateX(0);        
     }
 }
 
@@ -1247,12 +1248,12 @@ a{
 @keyframes testim-content-out {
     from {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
     
     to {
         opacity: 0;
-        transform: translateY(-100%);        
+        transform: translateX(-100%);        
     }
 }
 
@@ -1315,20 +1316,65 @@ a{
     }
 
     .testim .dots {
-        left: -40px;
+        left: 0px;
     }
     .arrow img {
         width: 75%;
     }
-
-
+    .testim .cont div h2 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    
+    .testim .cont div p {
+        font-size: 15px;
+        line-height: 15px;
+        color: #333;
+        width: 75%;
+    }
+    .testim .arrow {
+        font-size: 1em;
+        background-color: white;
+        box-shadow: 0px 23px 33px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 50px;
+        padding: 4px 10px;
+        color: var(--heading-color);
+    }
 }
 
-@media screen and (max-width: 320px) {
-    .testim .cont div p {
-        line-height: 22px;
-        margin-inline: 35px;
+@media screen and (max-width: 375px) {
+    .testim .cont div h2 {
+        font-size: 16px;
+        margin: 15px 0;
     }
+    
+    .testim .cont div p {
+        font-size: 14px;
+        line-height: 15px;
+        color: #333;
+        width: 65%;
+    }
+    .testim .wrap {
+        height: 385px;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    .testim .cont div h2 {
+        font-size: 15px;
+        margin: 15px 0;
+    }
+    
+    .testim .cont div p {
+        font-size: 12px;
+        line-height: 12px;
+        color: #333;
+        width: 65%;
+    }
+    .testim .wrap {
+        height: 350px;
+    }
+
 }
 
 
@@ -1484,13 +1530,13 @@ a{
     width: 300px;
     height: 500px;
     cursor: pointer;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: all 2000ms;
     margin-block: 50px;
 }
-.usa-service-mobile-slider:hover{
+/* .usa-service-mobile-slider:hover{
     filter: grayscale(0%);
-}
+} */
 .usa-service-mobile-slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -1514,22 +1560,26 @@ a{
     font-size: 16px;
     padding: 10px;
     top: 20px;
-    opacity: 0;
+    /* opacity: 0; */
     transition: opacity 2s ease-in-out; /* Smooth transition */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-block: 20px;
+    width: 250px;
 }
 .usa-service-mobile-text h2{
     color: var(--heading-color);
     font-size: 30px;
 }
 
-.usa-service-mobile-slide:hover .usa-service-mobile-text {
+/* .usa-service-mobile-slide:hover .usa-service-mobile-text {
     opacity: 1;
+} */
+.usa-service-mobile-slide-img {
+    margin: 0 auto;
+    width: 300px;
 }
-
 .usa-service-mobile-slide-img img{
     width: 100%;
 

@@ -4,9 +4,13 @@
 //     link.setAttribute('rel', 'nofollow noopener noreferrer');
 // });
 
-var screenWidth = window.innerWidth;
+// document.addEventListener('DOMContentLoaded', function() {
+    
+
+
 
 function handleSliderScroll() {
+    var screenWidth = window.innerWidth;
     var slide1 = document.getElementById('myDiv-1');
     var slide2 = document.getElementById('myDiv-2');
     var slide3 = document.getElementById('myDiv-3');
@@ -188,6 +192,6 @@ const textItems = Array.from(document.querySelectorAll('.text-item')).map(item =
     updateText(textItems[currentIndex]);
 
 
-
+// });
 
 
